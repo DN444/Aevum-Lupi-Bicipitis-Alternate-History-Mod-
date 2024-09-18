@@ -19,3 +19,9 @@ discovered_by = african_roman
 discovered_by = iranian
 discovered_by = ottoman
 discovered_by = eastern
+
+1444.11.11 = {
+	destroy_great_project = {
+		type = hunt_for_the_fox
+	}
+}

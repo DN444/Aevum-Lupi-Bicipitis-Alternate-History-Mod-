@@ -181,3 +181,279 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = swe2.4
+	title = swe2.4.test
+	desc = swe2.4.desc
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		is_subject = no
+		BR0 = {
+			exists = no
+		}
+		religion = norse_ragnaroked
+		240 = {
+			owned_by = ROOT
+		}
+		num_of_owned_provinces_with = {
+			value = 5
+			is_core = BR0
+		}
+		NOT = {
+			is_year = 1500
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = swe2.4a
+		set_country_flag = hunting_the_hun_flag
+		240 = {
+			add_great_project = {
+				type = hunt_for_the_fox
+				instant = yes
+			}
+		}	
+	}
+}
+
+country_event = {
+	id = swe2.5
+	title = swe2.5.test
+	desc = {
+		trigger = {
+			any_owned_province = {has_great_project = {type = hunt_for_the_fox tier = 0}}
+			NOT = {
+				any_owned_province = {has_great_project = {type = hunt_for_the_fox tier = 1}}
+			}
+		}
+		desc = swe2.5.desc.1
+	}
+	desc = {
+		trigger = {
+			any_owned_province = {has_great_project = {type = hunt_for_the_fox tier = 1}}
+			NOT = {
+				any_owned_province = {has_great_project = {type = hunt_for_the_fox tier = 2}}
+			}
+		}
+		desc = swe2.5.desc.2
+	}
+	desc = {
+		trigger = {
+			any_owned_province = {has_great_project = {type = hunt_for_the_fox tier = 2}}
+			NOT = {
+				any_owned_province = {has_great_project = {type = hunt_for_the_fox tier = 3}}
+			}
+		}
+		desc = swe2.5.desc.3
+	}
+	desc = {
+		trigger = {any_owned_province = {has_great_project = {type = hunt_for_the_fox tier = 3}}}
+		desc = swe2.5.desc.4
+	}
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = swe2.5a
+		trigger = {
+			any_owned_province = {has_great_project = {type = hunt_for_the_fox tier = 0}}
+			NOT = {
+				any_owned_province = {has_great_project = {type = hunt_for_the_fox tier = 1}}
+			}
+		}
+		random_list = {
+			50 = {
+				add_prestige = -10
+			}
+			45 = {
+				add_prestige = 5
+			}
+			5 = {
+				country_event = {
+					id = swe2.6
+				}
+			}
+		}
+	}
+	option = {
+		name = swe2.5b
+		trigger = {
+			any_owned_province = {has_great_project = {type = hunt_for_the_fox tier = 1}}
+			NOT = {
+				any_owned_province = {has_great_project = {type = hunt_for_the_fox tier = 2}}
+			}
+		}
+		random_list = {
+			30 = {
+				add_prestige = -10
+			}
+			50 = {
+				add_prestige = 5
+			}
+			20 = {
+				country_event = {
+					id = swe2.6
+				}
+			}
+		}
+	}
+	option = {
+		name = swe2.5c
+		trigger = {
+			any_owned_province = {has_great_project = {type = hunt_for_the_fox tier = 2}}
+			NOT = {
+				any_owned_province = {has_great_project = {type = hunt_for_the_fox tier = 3}}
+			}
+		}
+		random_list = {
+			10 = {
+				add_prestige = -10
+			}
+			40 = {
+				add_prestige = 5
+			}
+			40 = {
+				country_event = {
+					id = swe2.6
+				}
+			}
+		}
+	}
+	option = {
+		name = swe2.5d
+		trigger = {
+			any_owned_province = {has_great_project = {type = hunt_for_the_fox tier = 3}}
+		}
+		country_event = {
+			id = swe2.6
+		}
+	}
+}
+
+country_event = {
+	id = swe2.6
+	title = swe2.6.test
+	desc = swe2.6.desc
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = swe2.6a
+		add_army_tradition = 30
+		if = {
+			limit = {
+				had_country_flag = {
+					flag = hunting_the_hun_flag
+					days = 3650
+				}
+			}
+			add_treasury = 500
+		}
+		if = {
+			limit = {
+				had_country_flag = {
+					flag = hunting_the_hun_flag
+					days = 7300
+				}
+			}
+			add_treasury = 500
+		}
+		240 = {
+			destroy_great_project = {
+				type = hunt_for_the_fox
+			}
+		}
+		add_country_modifier = {
+			name = swe_fox_trophy
+			duration = 10950
+		}
+		clr_country_flag = hunting_the_hun_flag
+	}
+} 
+
+country_event = {
+	id = swe2.7
+	title = swe2.7.test
+	desc = swe2.7.desc
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		any_owned_province = {
+			has_great_project = {
+				type = hunt_for_the_fox
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 48
+	}
+	option = {
+		name = swe2.7a
+		every_owned_province = {
+			limit = {
+				is_core = BR0
+			}
+			add_local_autonomy = 20
+		}
+	}
+}
+
+country_event = {
+	id = swe2.8
+	title = swe2.8.test
+	desc = swe2.8.desc
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		had_country_flag = {
+			flag = hunting_the_hun_flag
+			days = 9125
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	immediate = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					is_core = BR0
+				}
+				cede_province = BR0
+			}
+		}
+	}
+	option = {
+		name = swe2.8a
+		BR0 = {
+			define_ruler = {
+				name = "Robert"
+				dynasty = "Vulpus"
+				adm = 5
+				dip = 2
+				mil = 5
+				age = 50
+			}
+		}
+	}
+	option = {
+		name = swe2.8b
+		BR0 = {
+			define_ruler = {
+				name = "Robert"
+				dynasty = "Vulpus"
+				adm = 5
+				dip = 2
+				mil = 5
+				age = 50
+			}
+		}
+		switch_tag = BR0
+	}
+}
