@@ -74,6 +74,6 @@ swe_control_colony = {
 }
 
 swe_fox_trophy = {
-	global_autonomy = -0.1
+	global_autonomy = -0.15
 	stability_cost_modifier = -0.25
 }

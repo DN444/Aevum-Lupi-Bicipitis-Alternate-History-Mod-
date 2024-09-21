@@ -4479,8 +4479,7 @@ hunt_for_the_fox = {
 		upgrade_time = {	months = 24	}
 		cost_to_upgrade = {		factor = 100	}
 		province_modifiers = {
-			local_unrest = 5
-			local_autonomy = 0.1
+			local_autonomy = 0.2
 		}
 		area_modifier = {
 			local_unrest = 2
@@ -4494,19 +4493,9 @@ hunt_for_the_fox = {
 			army_tradition = 0.05
 		}
 		on_upgraded = {
-			random_list = {
-				20 = {
-					add_great_project_tier = {
-						type = hunt_for_the_fox
-						tier = -1
-					}
-				}
-				80 = {
-					owner = {
-						country_event = {
-							id = swe2.5
-						}
-					}
+			owner = {
+				country_event = {
+					id = swe2.5
 				}
 			}
 		}
@@ -4515,8 +4504,7 @@ hunt_for_the_fox = {
 		upgrade_time = {	months = 24	}
 		cost_to_upgrade = {		factor = 100	}
 		province_modifiers = {
-			local_unrest = 4
-			local_autonomy = 0.1
+			local_autonomy = 0.15
 		}
 		area_modifier = {
 			local_unrest = 1
@@ -4529,19 +4517,9 @@ hunt_for_the_fox = {
 			army_tradition = 0.1
 		}
 		on_upgraded = {
-			random_list = {
-				30 = {
-					add_great_project_tier = {
-						type = hunt_for_the_fox
-						tier = -1
-					}
-				}
-				70 = {
-					owner = {
-						country_event = {
-							id = swe2.5
-						}
-					}
+			owner = {
+				country_event = {
+					id = swe2.5
 				}
 			}
 		}
@@ -4551,7 +4529,6 @@ hunt_for_the_fox = {
 		upgrade_time = {	months = 24	}
 		cost_to_upgrade = {		factor = 100	}
 		province_modifiers = {
-			local_unrest = 2
 			local_autonomy = 0.1
 		}
 		area_modifier = {
@@ -4564,19 +4541,9 @@ hunt_for_the_fox = {
 			army_tradition = 0.15
 		}
 		on_upgraded = {
-			random_list = {
-				30 = {
-					add_great_project_tier = {
-						type = hunt_for_the_fox
-						tier = -1
-					}
-				}
-				70 = {
-					owner = {
-						country_event = {
-							id = swe2.5
-						}
-					}
+			owner = {
+				country_event = {
+					id = swe2.5
 				}
 			}
 		}
@@ -4594,19 +4561,9 @@ hunt_for_the_fox = {
 		country_modifiers = {
 		}
 		on_upgraded = {
-			random_list = {
-				5 = {
-					add_great_project_tier = {
-						type = hunt_for_the_fox
-						tier = -1
-					}
-				}
-				95 = {
-					owner = {
-						country_event = {
-							id = swe2.5
-						}
-					}
+			owner = {
+				country_event = {
+					id = swe2.5
 				}
 			}
 		}

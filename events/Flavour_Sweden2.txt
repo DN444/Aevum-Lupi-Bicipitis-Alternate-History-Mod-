@@ -267,16 +267,22 @@ country_event = {
 			}
 		}
 		random_list = {
-			50 = {
+			20 = {
+				240 = {
+					add_great_project_tier = {
+						type = hunt_for_the_fox
+						tier = -1
+					}
+				}
+			}
+			30 = {
 				add_prestige = -10
 			}
-			45 = {
+			35 = {
 				add_prestige = 5
 			}
-			5 = {
-				country_event = {
-					id = swe2.6
-				}
+			15 = {
+				add_treasury = 50
 			}
 		}
 	}
@@ -289,16 +295,22 @@ country_event = {
 			}
 		}
 		random_list = {
+			20 = {
+				240 = {
+					add_great_project_tier = {
+						type = hunt_for_the_fox
+						tier = -1
+					}
+				}
+			}
 			30 = {
 				add_prestige = -10
 			}
-			50 = {
+			35 = {
 				add_prestige = 5
 			}
-			20 = {
-				country_event = {
-					id = swe2.6
-				}
+			15 = {
+				add_treasury = 50
 			}
 		}
 	}
@@ -312,7 +324,12 @@ country_event = {
 		}
 		random_list = {
 			10 = {
-				add_prestige = -10
+				240 = {
+					add_great_project_tier = {
+						type = hunt_for_the_fox
+						tier = -1
+					}
+				}
 			}
 			40 = {
 				add_prestige = 5
@@ -421,6 +438,11 @@ country_event = {
 	}
 	immediate = {
 		hidden_effect = {
+			240 = {
+				destroy_great_project = {
+					type = hunt_for_the_fox
+				}
+			}
 			every_owned_province = {
 				limit = {
 					is_core = BR0
