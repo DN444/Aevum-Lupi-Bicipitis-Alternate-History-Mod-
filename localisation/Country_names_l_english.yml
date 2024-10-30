@@ -4713,11 +4713,6 @@ asx_libyan_trade_dominance: ""
  RA1_ADJ:0 "Juggowinderan"
  RA1_ADJ2:0 "Juggowinderan"
 
-#Baltica
- LT4:0 "Baltica"
- LT4_ADJ:0 "Baltic"
- LT4-ADJ2:0 "Baltic"
-
 #Babylon
  MS0:0 "Babylon"
  MS0_ADJ:0 "Babylonian"
